@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Paradigmas
 {
-    public interface IPessoa
+    internal interface IPessoa
     {
-        string Nome { get; set; }
-        int Idade {  get; set; }
-        void preencher();
+        public string Nome { get; set; }
+        public int Idade {  get; set; }
+        public void preencher();
     }
 }

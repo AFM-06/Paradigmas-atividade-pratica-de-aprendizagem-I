@@ -17,7 +17,11 @@ namespace Paradigmas
         }
         public void preencher()
         {
-            Console.WriteLine($"Teste");
+            Console.WriteLine("Qual o nome do aluno?");
+            Nome = Console.ReadLine();
+            Console.WriteLine("Qual a idade?");
+            Idade = int.Parse(Console.ReadLine);
+
         }
     }
 }

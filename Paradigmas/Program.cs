@@ -1,1 +1,4 @@
-﻿Console.WriteLine("Hello, World!");
+﻿using System;
+using Paradigmas;
+
+Console.ReadLine();
