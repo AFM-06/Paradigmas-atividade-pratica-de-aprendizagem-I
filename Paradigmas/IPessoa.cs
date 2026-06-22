@@ -9,5 +9,6 @@ namespace Paradigmas
         public string Nome { get; set; }
         public int Idade {  get; set; }
         public void preencher();
+        public void exibir();
     }
 }

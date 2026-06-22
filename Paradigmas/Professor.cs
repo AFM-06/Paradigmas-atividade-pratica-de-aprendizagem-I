@@ -6,9 +6,9 @@ namespace Paradigmas
 {
     internal class Professor : IPessoa
     {
-        string Nome {  get; set; }
-        int Idade { get; set; }
-        string Materia { get; set; }
+        public string Nome {  get; set; }
+        public int Idade { get; set; }
+        public string Materia { get; set; }
         
         public Professor(string Nome, int Idade, string Materia)
         {
@@ -26,7 +26,10 @@ namespace Paradigmas
             Idade = int.Parse(Console.ReadLine());
             Console.WriteLine("Qual a matéria que ele leciona?");
             Materia = Console.ReadLine();
-
+        }
+        public void exibir()
+        {
+            Console.WriteLine($"Nome: {Nome} || Idade: {Idade}\nMatéria: {Materia}.");
         }
     }
 }
