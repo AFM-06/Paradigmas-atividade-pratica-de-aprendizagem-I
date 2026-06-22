@@ -9,13 +9,15 @@ namespace Paradigmas
         public string Nome { get; set; }
         public int Idade { get; set; } = 0;
         public double Media { get; set; } = -1;
+        public string Situacao { get; set; }
 
 
-        public Aluno(string Nome, int Idade, double Media)
+        public Aluno(string Nome, int Idade, double Media, string Situacao)
         {
             this.Nome = Nome;
             this.Idade = Idade;
             this.Media = Media;
+            this.Situacao = Situacao;
 
         }
         public void preencher()
@@ -37,6 +39,16 @@ namespace Paradigmas
             n3 = int.Parse(Console.ReadLine());
 
             this.Media = (n1 + n2 + n3) / 3;
+            if (this.Media >= 7)
+            {
+                this.Situacao = "Aprovado.";
+            } else if (this.Media<7 && this.Media >= 5)
+            {
+                this.Situacao = "Recuperação.";
+            }else
+            {
+                this.Situacao = "Reprovado.";
+            }
         }
 
         public void exibir()
