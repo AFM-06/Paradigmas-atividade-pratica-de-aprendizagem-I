@@ -18,7 +18,7 @@ internal class Program
         primeiro_medio.adicionarAluno(a4);
         primeiro_medio.adicionarProfessor(prof1);
         primeiro_medio.adicionarProfessor(prof2);
-        primeiro_medio.exibir();
-
+        primeiro_medio.buscarAlunoPorNome("maria");
+        primeiro_medio.buscarProfessorPorNome("vinicius");
     }
 }
