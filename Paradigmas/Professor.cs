@@ -17,6 +17,7 @@ namespace Paradigmas
             this.Materia = Materia;
 
         }
+        public Professor() { }
 
         public void preencher()
         {
@@ -29,7 +30,7 @@ namespace Paradigmas
         }
         public void exibir()
         {
-            Console.WriteLine($"Nome: {Nome} || Idade: {Idade}\nMatéria: {Materia}.");
+            Console.Write($"|| Nome: {Nome}({Idade}),{Materia}.");
         }
     }
 }

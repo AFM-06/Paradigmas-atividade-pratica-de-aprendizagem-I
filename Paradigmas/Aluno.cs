@@ -20,6 +20,7 @@ namespace Paradigmas
             this.Situacao = Situacao;
 
         }
+        public Aluno() { }
         public void preencher()
         {
             Console.WriteLine("Qual o nome do aluno?");
@@ -53,7 +54,7 @@ namespace Paradigmas
 
         public void exibir()
         {
-            Console.WriteLine($"Nome: {Nome} || Idade: {Idade}\nMédia: {Media}.");
+            Console.WriteLine($"Nome: {Nome} || Idade: {Idade}\nMédia: {Media} ({Situacao}).");
         }
     }
 }
