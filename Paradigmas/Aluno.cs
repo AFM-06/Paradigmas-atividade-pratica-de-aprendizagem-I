@@ -31,13 +31,13 @@ namespace Paradigmas
         }
         public void média()
         {
-            int n1, n2, n3;
+            double n1, n2, n3;
             Console.WriteLine("Qual a nota 1?");
-            n1 = int.Parse(Console.ReadLine());
+            n1 = double.Parse(Console.ReadLine());
             Console.WriteLine("Qual a nota 2?");
-            n2 = int.Parse(Console.ReadLine());
+            n2 = double.Parse(Console.ReadLine());
             Console.WriteLine("Qual a nota 3?");
-            n3 = int.Parse(Console.ReadLine());
+            n3 = double.Parse(Console.ReadLine());
 
             this.Media = (n1 + n2 + n3) / 3;
             if (this.Media >= 7)

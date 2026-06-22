@@ -1,3 +1,4 @@
 <Solution>
-  <Project Path="Paradigmas/Paradigmas.csproj" />
+  <Project Path="Paradigmas/Paradigmas_versao_2.csproj" />
+  <Project Path="Paradigmas_versao_1/Paradigmas_versao_1.csproj" Id="f40bd4fc-e504-44c7-9e1a-7d31fd28e283" />
 </Solution>
